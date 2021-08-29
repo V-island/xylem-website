@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>首页</title>
+  <link rel="stylesheet" href="css/lightslider.min.css" />
+  <link rel="stylesheet" href="css/video-js.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- 头部导航 -->
+  <header class="header-wrapper">
+    <div class="header">
+      <a class="logo" href="#">
+        <img src="images/logo.png" />
+      </a>
+      <div class="search">
+        <!-- 搜索输入框 -->
+        <div class="search-group">
+          <i class="fa fa-search"></i>
+          <input type="search" class="search-input" placeholder="请输入您要查找的产品">
+          <button type="submit" class="btn-search">搜索</button></button>
+        </div>
+      </div>
+      <div class="upload">
+        <button type="button" class="btn-upload" data-toggle="modal" data-target="#upload-modal">
+          <i class="icon-video"></i>
+          上传视频
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 上传弹框 -->
+  <div class="modal fade" id="upload-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="modal-form">
+            <div class="form-group">
+              <label class="control-label">所属部门</label>
+              <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="control-label">您的姓名</label>
+              <input type="text" class="form-control" placeholder="请输入">
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="icon-upload"></i>
+              本地上传
+            </button>
+          </form>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+  </div>
+
+  <!-- 轮播 -->
+  <div class="banner" style="max-width:100%;">
+    <ul id="image-gallery" class="gallery">
+      <li><img src="images/banner/banner001.png" style="width: 100%" /></li>
+    </ul>
+    <div class="banbj"></div>
+  </div>
+
+  <!-- 详情 -->
+  <section class="section-detail">
+    <h5 class="title">赛莱默亮相上海国际水展现场视频</h5>
+    <div class="video-body">
+      <video
+        id="my-player"
+        class="video-js"
+        controls
+        videoWidth="100%"
+        videoHeight="100%"
+        preload="auto"
+        poster="//vjs.zencdn.net/v/oceans.png">
+      <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
+      <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
+      <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source>
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank">
+          supports HTML5 video
+        </a>
+      </p>
+    </video>
+    </div>
+    <div class="video-info">
+      <p>上传者：Kevin改变世界的点滴</p>
+      <ul class="triptych">
+        <li>
+          <i class="fa fa-commenting-o"></i>
+          <p>20</p>
+        </li>
+        <li>
+          <i class="fa fa-heart-o"></i>
+          <p>68</p>
+        </li>
+      </ul>
+    </div>
+    <div class="comment">
+      <h5 class="title"><span>2条</span>评论</h5>
+      <div class="comment-body">
+        <div class="comment-item">
+          <div class="top">
+            <div class="title">橙光</div>
+            <span class="time">2小时前</span>
+          </div>
+          <div class="description">
+            好看好看
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="top">
+            <div class="title">橙光</div>
+            <span class="time">2小时前</span>
+          </div>
+          <div class="description">
+            好看好看
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="top">
+            <div class="title">橙光</div>
+            <span class="time">2小时前</span>
+          </div>
+          <div class="description">
+            好看好看
+          </div>
+        </div>
+      </div>
+      <form class="comment-form">
+        <div class="form-group">
+          <textarea class="form-control" rows="5" placeholder="写下你的评论..."></textarea>
+        </div>
+        <div class="form-group button">
+          <button type="submit" class="btn btn-primary">发布</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- 底部导航 -->
+  <div class="footer-wrapper">
+    <div class="content">
+      <div class="wechat">
+        <img src="images/code-wechat.png" alt="">
+        <div class="phone">
+          <span>客服热线:</span>
+          <p>400-820-3906</p>
+        </div>
+      </div>
+      <ul class="nav">
+        <li>
+          <a href="#">网站首页</a>
+        </li>
+        <li>
+          <a href="#">关于我们</a>
+        </li>
+        <li>
+          <a href="#">行业与解决方案</a>
+          <ul class="sub-nav">
+            <li><a href="#">市政领域</a></li>
+            <li><a href="#">工业领域</a></li>
+            <li><a href="#">建筑楼宇</a></li>
+            <li><a href="#">水处理</a></li>
+            <li><a href="#">分析仪器</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">市场活动</a>
+        </li>
+        <li>
+          <a href="#">联系我们</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    <span>Copyright 2016 Xylem Inc 版权所有</span>
+  </div>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/lightslider.min.js"></script>
+  <script type="text/javascript" src="js/video.min.js"></script>
+  <script type="text/javascript" src="js/modal.js"></script>
+  <script type="text/javascript" src="js/style.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#image-gallery').lightSlider({
+        item: 1,
+        pager: true,
+        slideMargin: 0,
+        enableDrag: true,
+        speed: 500,
+        pause: 4000,
+        auto: true,
+        loop: true,
+        enableTouch: true,
+        onBeforeStart: function (el) {
+          el.children().show()
+        },
+      });
+    });
+  </script>
+</body>
+
+</html>
