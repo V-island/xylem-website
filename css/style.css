@@ -4160,7 +4160,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   padding: 0;
-  padding: 20px;
 }
 @media (min-width: 999px) {
   .section-detail {
@@ -4170,6 +4169,17 @@ body {
 @media (max-width: 991px) {
   .section-detail {
     width: 100%;
+  }
+}
+@media (min-width: 999px) {
+  .section-detail {
+    padding: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .section-detail {
+    padding: 0 10px;
+    width: auto;
   }
 }
 .section-detail > h5.title {
@@ -4183,6 +4193,10 @@ body {
   width: 100%;
   height: 600px;
   margin-bottom: 10px;
+}
+.section-detail .video-body .my-player-dimensions {
+  width: 100%;
+  height: 100%;
 }
 .section-detail .video-info {
   display: -webkit-box;
